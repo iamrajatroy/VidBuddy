@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        dbRef = FirebaseDatabase.getInstance().getReference(refName);
+        dbRef = FirebaseDatabase.getInstance().getReference().child(refName);
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -171,7 +171,7 @@ public class LoginActivity extends AppCompatActivity {
         String uId = firebaseUser.getUid();
         String userName = firebaseUser.getDisplayName();
         String emailId = firebaseUser.getEmail();
-        Uri photoUri = firebaseUser.getPhotoUrl();
+        String photoUri = firebaseUser.getPhotoUrl().toString();
         User user = new User(uId,userName,emailId,photoUri);
         dbRef.child(uId).setValue(user);
     }

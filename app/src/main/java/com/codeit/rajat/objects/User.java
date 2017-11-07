@@ -12,11 +12,11 @@ public class User {
     private String uId;
     private String userName;
     private String emailId;
-    private Uri photoUri;
+    private String photoUri;
     private List<String> followers;
     private List<String> followedBy;
 
-    public User(String uId, String userName, String emailId, Uri photoUri) {
+    public User(String uId, String userName, String emailId,String photoUri) {
         this.uId = uId;
         this.userName = userName;
         this.emailId = emailId;
@@ -47,11 +47,11 @@ public class User {
         this.emailId = emailId;
     }
 
-    public Uri getPhotoUri() {
+    public String getPhotoUri() {
         return photoUri;
     }
 
-    public void setPhotoUri(Uri photoUri) {
+    public void setPhotoUri(String photoUri) {
         this.photoUri = photoUri;
     }
 
