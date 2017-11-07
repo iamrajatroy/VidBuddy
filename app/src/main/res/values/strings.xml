@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VidBuddy</string>
+
+    <!--Slide 1 title and description -->
+    <string name="title_slide_1">Share Videos</string>
+    <string name="desc_slide_1">Let people know about your talent by sharing your videos</string>
+    <!--Slide 2 title and description -->
+    <string name="title_slide_2">Connect</string>
+    <string name="desc_slide_2">Connect with people who share same interests</string>
+    <!--Slide 3 title and description -->
+    <string name="title_slide_3">Safe Storage</string>
+    <string name="desc_slide_3">Keep all your public and private videos in the cloud</string>
+
+
+    <string name="my_pref">MY_PREF</string>
+    <string name="my_pref_key">MY_PREF_KEY</string>
+</resources>
