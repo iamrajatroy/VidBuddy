@@ -19,8 +19,15 @@
     <string-array name="nav_items">
         <item>Feeds</item>
         <item>Explore</item>
-        <item>Activity</item>
+        <item>Trending</item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
         <item>Logout</item>
     </string-array>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
     
 </resources>
