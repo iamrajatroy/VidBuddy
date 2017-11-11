@@ -14,7 +14,7 @@
 
     <string name="my_pref">MY_PREF</string>
     <string name="my_pref_key">MY_PREF_KEY</string>
-    
+
     <!--Navigation drawer-->
     <string-array name="nav_items">
         <item>Feeds</item>
@@ -29,5 +29,5 @@
 
     <string name="drawer_open">Drawer Open</string>
     <string name="drawer_close">Drawer Close</string>
-    
+
 </resources>

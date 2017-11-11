@@ -1,11 +1,8 @@
 package com.codeit.rajat.vidbuddy;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.PersistableBundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,15 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import com.codeit.rajat.utilities.RecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class FeedsActivity extends AppCompatActivity {
-
+public class ExploreActivity extends AppCompatActivity {
     private String userName;
     private Toolbar toolbar;
     private RecyclerView recyclerView;
@@ -43,7 +38,7 @@ public class FeedsActivity extends AppCompatActivity {
 
         toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Feeds");
+        setTitle("Explore");
 
         recyclerView = findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(this);

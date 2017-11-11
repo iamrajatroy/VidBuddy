@@ -20,7 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".FeedsActivity"></activity>
+        <activity android:name=".FeedsActivity" />
+        <activity android:name=".ExploreActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".Logout"/>
     </application>
 
 </manifest>

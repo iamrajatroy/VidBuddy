@@ -1,13 +1,18 @@
 package com.codeit.rajat.utilities;
 
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.codeit.rajat.vidbuddy.ExploreActivity;
+import com.codeit.rajat.vidbuddy.FeedsActivity;
+import com.codeit.rajat.vidbuddy.Logout;
 import com.codeit.rajat.vidbuddy.R;
+import com.codeit.rajat.vidbuddy.TrendingActivity;
 
 import java.util.ArrayList;
 
@@ -31,8 +36,33 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerViewHolder holder, final int position) {
         holder.textView.setText(arrayList.get(position));
+        holder.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(position == 0){
+                    v.getContext().startActivity(new Intent(
+                            v.getContext(), FeedsActivity.class
+                    ));
+                }
+                if (position == 1){
+                    v.getContext().startActivity(new Intent(
+                            v.getContext(), ExploreActivity.class
+                    ));
+                }
+                if (position == 2){
+                    v.getContext().startActivity(new Intent(
+                            v.getContext(), TrendingActivity.class
+                    ));
+                }
+                if(position == 7){
+                    v.getContext().startActivity(new Intent(
+                            v.getContext(), Logout.class
+                    ));
+                }
+            }
+        });
     }
 
     @Override
