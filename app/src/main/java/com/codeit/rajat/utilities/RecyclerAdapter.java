@@ -13,6 +13,7 @@ import com.codeit.rajat.vidbuddy.FeedsActivity;
 import com.codeit.rajat.vidbuddy.Logout;
 import com.codeit.rajat.vidbuddy.R;
 import com.codeit.rajat.vidbuddy.TrendingActivity;
+import com.codeit.rajat.vidbuddy.UploadActivity;
 
 import java.util.ArrayList;
 
@@ -54,6 +55,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                 if (position == 2){
                     v.getContext().startActivity(new Intent(
                             v.getContext(), TrendingActivity.class
+                    ));
+                }
+                if (position == 3){
+                    v.getContext().startActivity(new Intent(
+                            v.getContext(), UploadActivity.class
                     ));
                 }
                 if(position == 7){

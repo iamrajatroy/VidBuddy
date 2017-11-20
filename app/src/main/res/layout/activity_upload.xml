@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeit.rajat.vidbuddy.UploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload_scrollView"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvy_style_button"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:id="@+id/upload_video_btn"
+                />
+
+            <VideoView
+                android:layout_below="@id/upload_video_btn"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:id="@+id/upload_video_view"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvy_style_edittext"
+                android:hint="Enter Title"
+                android:textColorHint="@color/white"
+                android:layout_margin="10dp"
+                android:layout_below="@id/upload_video_view"
+                android:id="@+id/upload_video_title"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/curvy_style_edittext"
+                android:layout_below="@id/upload_video_title"
+                android:layout_margin="10dp"
+                android:hint="Description"
+                android:textColorHint="@color/white"
+                android:id="@+id/upload_video_desc"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curvy_style_button"
+        android:text="Pick Video File"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/pick_button"
+        />
+
+
+</RelativeLayout>

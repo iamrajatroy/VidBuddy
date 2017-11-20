@@ -23,7 +23,8 @@
         <activity android:name=".FeedsActivity" />
         <activity android:name=".ExploreActivity" />
         <activity android:name=".TrendingActivity" />
-        <activity android:name=".Logout"/>
+        <activity android:name=".Logout" />
+        <activity android:name=".UploadActivity"></activity>
     </application>
 
 </manifest>
